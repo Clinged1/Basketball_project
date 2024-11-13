@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score Board</title>
+    <script src="basketball.js"></script>
+    <link rel="stylesheet" href="basketball.css">
+</head>
+<body>
+    
+
+    <section>
+        <div class="home">
+            <h2 class="hometag">HOME</h2>
+            <button id="homeScore">
+                0
+            </button>
+
+            <div>
+            <button id="one" onclick="one()">+1</button >
+            <button id="two" onclick="two()">+2</button>
+            <button id="three" onclick="three()">+3</button>
+            <button class="reset" onclick="reset()">Reset</button>
+            
+        </div>
+
+        </div>
+        <div class="guest">
+
+            <h2>GUEST</h2>
+            <h1 id="awayScore">
+                0
+            </h1>
+
+        <div>
+            <button id="onealt" onclick="onealt()">
+                +1
+            </button >
+            <button id="twoalt" onclick="twoalt()">
+                +2
+            </button>
+            <button id="threealt" onclick="threealt()">
+                +3
+            </button>
+            <button class="reset" onclick="resetalt()">
+                Reset
+            </button>
+        </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

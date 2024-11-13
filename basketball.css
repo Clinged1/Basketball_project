@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
-     ul li::marker {
-    color: var(--clr-Rose-800);
-  }
 }
-
-
 
 body {
     display: flex;
@@ -21,57 +16,28 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-
 section {
- display: flex;
-
-
+    display: flex;
 }
 
 section > div:nth-child(2) {
     padding-left: 150px;
-
-
 }
 
-
-
-
-#homeScore {
+#homeScore, #awayScore {
     font-size: 5rem;
     background-color: black;
     color: #35FF69;
     font-family: "Doto", sans-serif;
     border-radius: 10px;
-    height: auto;
-    width: auto;
     border: none;
     padding: 20px;
     margin: 0;
     font-weight: bold;
-
-
 }
-
 
 #awayScore {
-    font-size: 5rem;
-    background-color: black;
     color: rgba(249,79,109,1);
-    font-family: "Doto", sans-serif;
-    border-radius: 10px;
-    height: auto;
-    width: auto;
-    border: none;
-    padding: 20px;
-    margin: 0;
-    font-weight: bold;
-
-
-}
-
-#homeScore:active {
-    transform: scale(1);
 }
 
 h2 {
@@ -85,16 +51,9 @@ h2 {
     transition: 0.7s;
 }
 
-
 h2:hover {
     color: #D81E5B;
     transition: 0.7s;
-}
-
-
-.guest > div > button:hover {
-    background-color: #D81E5B;
-    transition: 0.5s;
 }
 
 button {
@@ -102,12 +61,11 @@ button {
     height: 35px;
     background-color: transparent;
     border-radius: 5px;
-    border-color: rgba(154, 171, 216, 1);
+    border: solid rgba(154, 171, 216, 1);
     color: rgba(154, 171, 216, 1);
-    border-style: solid;
-    margin-top: 20px;
     font-family: "Doto", sans-serif;
     font-size: 1rem;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -117,7 +75,6 @@ button:hover {
 
 button:active {
     transform: scale(0.8);
-
 }
 
 .reset:active {
@@ -128,32 +85,19 @@ button:active {
     width: 60px;
 }
 
-.home {
+.home, .guest {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.guest {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-
-@media (min-width: 200px) and (max-width: 750px) {
+@media (max-width: 750px) {
     section {
-        display: flex;
         flex-direction: column;
     }
 
     section > div:nth-child(2) {
         padding-left: 0;
         padding-top: 40px;
-    
-    
     }
-
-    
-  }
+}

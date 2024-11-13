@@ -1,8 +1,6 @@
-
-
 function one() {
     let changeScore = document.getElementById("homeScore");
-    changeScore.textContent++;
+    changeScore.textContent = Number(changeScore.textContent) + 1;
 }
 
 function two() {
@@ -10,23 +8,19 @@ function two() {
     changeScore.textContent = Number(changeScore.textContent) + 2;
 }
 
-
 function three() {
     let changeScore = document.getElementById("homeScore");
     changeScore.textContent = Number(changeScore.textContent) + 3;
-
 }
-
 
 function reset() {
     let changeScore = document.getElementById("homeScore");
     changeScore.textContent = 0;
 }
 
-
 function onealt() {
     let changeScore = document.getElementById("awayScore");
-    changeScore.textContent++;
+    changeScore.textContent = Number(changeScore.textContent) + 1;
 }
 
 function twoalt() {
@@ -34,21 +28,12 @@ function twoalt() {
     changeScore.textContent = Number(changeScore.textContent) + 2;
 }
 
-
 function threealt() {
     let changeScore = document.getElementById("awayScore");
     changeScore.textContent = Number(changeScore.textContent) + 3;
-
 }
-
 
 function resetalt() {
     let changeScore = document.getElementById("awayScore");
     changeScore.textContent = 0;
 }
-
-
-
-
-
-

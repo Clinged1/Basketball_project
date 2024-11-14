@@ -57,6 +57,11 @@ h2 {
     transition: 0.7s;
 }
 
+.awaytag:hover {
+    color: rgba(249,79,109,1);
+    transition: 0.7s;
+}
+
 .guest > div > button:hover {
     background-color: #D81E5B;
     transition: 0.5s;

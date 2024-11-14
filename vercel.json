@@ -1,6 +1,6 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/basketball.html" }
+    "routes": [
+      { "src": "/(.*)", "dest": "/basketball.html" }
     ]
   }
   
